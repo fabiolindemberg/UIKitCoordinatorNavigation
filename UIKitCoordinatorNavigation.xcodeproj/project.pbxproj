@@ -13,6 +13,13 @@
 		51B16ED025C8D8E2002EA38E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B16ECE25C8D8E2002EA38E /* Main.storyboard */; };
 		51B16ED225C8D8E5002EA38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B16ED125C8D8E5002EA38E /* Assets.xcassets */; };
 		51B16ED525C8D8E5002EA38E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B16ED325C8D8E5002EA38E /* LaunchScreen.storyboard */; };
+		51B16EDF25C8D910002EA38E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B16EDE25C8D910002EA38E /* Coordinator.swift */; };
+		51B16EE325C8DD32002EA38E /* StoryBoarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B16EE225C8DD32002EA38E /* StoryBoarded.swift */; };
+		51B16EE625C8DE88002EA38E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B16EE525C8DE88002EA38E /* MainCoordinator.swift */; };
+		51B16EEA25C8E572002EA38E /* BlueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B16EE925C8E572002EA38E /* BlueCoordinator.swift */; };
+		51B16EF125C8E5D5002EA38E /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B16EF025C8E5D5002EA38E /* BlueViewController.swift */; };
+		51B16EF425C8E698002EA38E /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B16EF325C8E698002EA38E /* OrangeViewController.swift */; };
+		51B16EF725C8E6BA002EA38E /* OrangeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B16EF625C8E6BA002EA38E /* OrangeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		51B16ED125C8D8E5002EA38E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51B16ED425C8D8E5002EA38E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51B16ED625C8D8E5002EA38E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B16EDE25C8D910002EA38E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		51B16EE225C8DD32002EA38E /* StoryBoarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoarded.swift; sourceTree = "<group>"; };
+		51B16EE525C8DE88002EA38E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		51B16EE925C8E572002EA38E /* BlueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCoordinator.swift; sourceTree = "<group>"; };
+		51B16EF025C8E5D5002EA38E /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		51B16EF325C8E698002EA38E /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
+		51B16EF625C8E6BA002EA38E /* OrangeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,30 @@
 		51B16EC725C8D8E2002EA38E /* UIKitCoordinatorNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				51B16EDD25C8D8F4002EA38E /* Coordinators */,
 				51B16EC825C8D8E2002EA38E /* AppDelegate.swift */,
 				51B16ECA25C8D8E2002EA38E /* SceneDelegate.swift */,
 				51B16ECC25C8D8E2002EA38E /* ViewController.swift */,
+				51B16EF025C8E5D5002EA38E /* BlueViewController.swift */,
+				51B16EF325C8E698002EA38E /* OrangeViewController.swift */,
 				51B16ECE25C8D8E2002EA38E /* Main.storyboard */,
 				51B16ED125C8D8E5002EA38E /* Assets.xcassets */,
 				51B16ED325C8D8E5002EA38E /* LaunchScreen.storyboard */,
 				51B16ED625C8D8E5002EA38E /* Info.plist */,
 			);
 			path = UIKitCoordinatorNavigation;
+			sourceTree = "<group>";
+		};
+		51B16EDD25C8D8F4002EA38E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				51B16EDE25C8D910002EA38E /* Coordinator.swift */,
+				51B16EE225C8DD32002EA38E /* StoryBoarded.swift */,
+				51B16EE525C8DE88002EA38E /* MainCoordinator.swift */,
+				51B16EE925C8E572002EA38E /* BlueCoordinator.swift */,
+				51B16EF625C8E6BA002EA38E /* OrangeCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B16EE325C8DD32002EA38E /* StoryBoarded.swift in Sources */,
+				51B16EE625C8DE88002EA38E /* MainCoordinator.swift in Sources */,
+				51B16EF125C8E5D5002EA38E /* BlueViewController.swift in Sources */,
+				51B16EDF25C8D910002EA38E /* Coordinator.swift in Sources */,
+				51B16EF725C8E6BA002EA38E /* OrangeCoordinator.swift in Sources */,
 				51B16ECD25C8D8E2002EA38E /* ViewController.swift in Sources */,
+				51B16EF425C8E698002EA38E /* OrangeViewController.swift in Sources */,
+				51B16EEA25C8E572002EA38E /* BlueCoordinator.swift in Sources */,
 				51B16EC925C8D8E2002EA38E /* AppDelegate.swift in Sources */,
 				51B16ECB25C8D8E2002EA38E /* SceneDelegate.swift in Sources */,
 			);
